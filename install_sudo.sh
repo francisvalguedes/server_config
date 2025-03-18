@@ -12,6 +12,10 @@ sudo apt install python3-venv -y
 
 sudo apt install nano -y
 
+sudo apt install cron -y
+
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
 
 sudo apt install iptables-persistent -y
+
+# sudo dpkg-reconfigure iptables-persistent
